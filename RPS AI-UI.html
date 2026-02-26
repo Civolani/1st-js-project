@@ -1,25 +1,97 @@
 <!DOCTYPE html>
+
+
 <html>
+
+<style>
+    
+    #title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #description {
+        
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        font-family: system-ui;
+    }
+
+    button {
+        transition: box-shadow 0.2s ease-in-out;
+    }
+
+    button:hover {
+        box-shadow: 0 0 5px rgba(133, 133, 133, 0.242);
+    }
+
+    #shoot:hover {
+        box-shadow: 0 0 10px rgba(254, 0, 0, 0.343);
+       
+    }
+
+    #userchoices {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    #rock,#paper,#scissors {
+        border-radius: 10px;
+        font-size: 15;
+        border: 1px solid rgb(144, 144, 144);
+        padding-bottom: 7px;
+        padding-top: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+
+    #shoot {
+        font-size: 20px;
+        border-radius: 12px;
+        border: 1px solid rgb(144, 144, 144);
+        cursor: pointer;
+        padding: 1.5%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+</style>
+
+
 <head>
+
     <title>RPS</title>
+
 </head>
+
+
 <body>
+    <p id="title">Rock Paper Scissors</p>
+
+    <p id="description">Choose your weapon</p>
+
+    <div id="userchoices">
     <button id="rock">Rock</button>
     <button id="paper">Paper</button>
     <button id="scissors">Scissors</button>
-    
+    </div>
+
     <br><br>
-    
+
     <button id="shoot">Shoot!</button>
-    
+
     <br><br>
-    
-    <div id="cpu-result"></div>
-    
-    <br>
-    
+
+    <div id="cpu-choice"></div>
+
+    <br><br>
+
     <div id="outcome"></div>
-    
-    <script src="rps.js"></script>
+
 </body>
 </html>

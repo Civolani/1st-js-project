@@ -7,6 +7,8 @@ dropdown.forEach(function(selection) {
         if (choice.target.textContent !== "shoot") {weapon = choice.target.textContent
         } else {
             
+
+            }
         }
     }
 )})
