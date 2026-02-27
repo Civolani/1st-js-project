@@ -16,6 +16,10 @@
         font-size: 21.5px;
     }
 
+    #cpu-choice {
+        width: 80px
+    }
+
     body {
         display: flex;
         flex-direction: column;
@@ -42,6 +46,12 @@
         flex-direction: row;
         gap: 5px;
         margin-bottom: 5px;
+    }
+
+    #cpu {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
     }
 
     .weapon {
@@ -91,16 +101,19 @@
     <button id="scissors" class="weapon">Scissors</button>
     </div>
 
-    <br>
+    <br><br>
+
+    <div id="cpu">
+        <p id="cpu-title" style="font-size: 22px"> 🤖 CPU:</p>
+        <p id="cpu-choice" style="font-size: 22px">Rock</p>
+    </div>
+
+    <br> <br>
 
     <button id="shoot">Shoot!</button>
 
-    <br><br>
-
-    <div id="cpu-choice"></div>
-
-    <br><br>
-
+    <br>
+    
     <div id="outcome"></div>
 
     <script src="RPS.js"></script>
