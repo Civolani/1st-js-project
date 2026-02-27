@@ -17,7 +17,8 @@
     }
 
     #cpu-choice {
-        width: 80px
+        width: 80px;
+        text-align: center;
     }
 
     body {
@@ -37,7 +38,7 @@
     }
 
     #shoot:hover {
-        box-shadow: 0 0 10px rgba(254, 0, 0, 0.343);
+        box-shadow: 0 0 10px rgba(156, 156, 156, 0.343);
        
     }
 
@@ -52,11 +53,16 @@
         display: flex;
         flex-direction: row;
         gap: 7px;
+        border: 1.5px, solid rgb(194, 194, 194);
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 10px;
+        background-color: rgb(236, 236, 255);
     }
 
     .weapon {
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 18px;
         border: 1px solid rgb(144, 144, 144);
         padding-bottom: 7px;
         padding-top: 7px;
@@ -104,8 +110,8 @@
     <br><br>
 
     <div id="cpu">
-        <p id="cpu-title" style="font-size: 22px"> 🤖 CPU:</p>
-        <p id="cpu-choice" style="font-size: 22px">Rock</p>
+        <p id="cpu-title" style="font-size: 20px"> 🤖 CPU:</p>
+        <p id="cpu-choice" style="font-size: 20px">Rock</p>
     </div>
 
     <br> <br>
