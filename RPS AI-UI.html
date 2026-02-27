@@ -11,8 +11,11 @@
     }
 
     #description {
-        
+        margin-bottom: 25px;
+        margin-top: 28px;
+        font-size: 21.5px;
     }
+
     body {
         display: flex;
         flex-direction: column;
@@ -37,18 +40,23 @@
     #userchoices {
         display: flex;
         flex-direction: row;
-        gap: 8px;
+        gap: 5px;
+        margin-bottom: 5px;
     }
 
-    #rock,#paper,#scissors {
+    .weapon {
         border-radius: 10px;
-        font-size: 15;
+        font-size: 15px;
         border: 1px solid rgb(144, 144, 144);
         padding-bottom: 7px;
         padding-top: 7px;
         padding-left: 15px;
         padding-right: 15px;
         cursor: pointer;
+    }
+
+    .selected {
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.575) !important;   
     }
 
     #shoot {
@@ -75,13 +83,15 @@
 
     <p id="description">Choose your weapon</p>
 
+    <div></div>
+
     <div id="userchoices">
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+    <button id="rock" class="weapon">Rock</button>
+    <button id="paper" class="weapon">Paper</button>
+    <button id="scissors" class="weapon">Scissors</button>
     </div>
 
-    <br><br>
+    <br>
 
     <button id="shoot">Shoot!</button>
 
@@ -93,5 +103,6 @@
 
     <div id="outcome"></div>
 
+    <script src="RPS.js"></script>
 </body>
 </html>

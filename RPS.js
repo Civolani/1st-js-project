@@ -1,14 +1,26 @@
-let dropdown = document.querySelectorAll('button')
 
-let weapon = ""
+let selectedweapon = ""
 
-dropdown.forEach(function(selection) {
-    selection.addEventListener('click', function(choice) {
-        if (choice.target.textContent !== "shoot") {weapon = choice.target.textContent
-        } else {
-            
+let weapon = document.querySelectorAll('.weapon')
 
-            }
-        }
+
+document.addEventListener('click', function (clickedout) {
+    if (clickedout.target.classList === "userchoices") {
+    weapon.forEach(function(btn) {btn.classList.remove('selected')})
     }
-)})
+})
+
+weapon.forEach(function(choice) {
+    choice.addEventListener('click', function(object) {
+    weapon.forEach(function(btn) {btn.classList.remove('selected')});
+    object.target.classList.add('selected')
+    selectedweapon = object.target.textContent;
+    console.log(selectedweapon)
+})})
+
+document.getElementById('shoot').addEventListener('click', function (deselect) {
+    weapon.forEach(function(btn) {btn.classList.remove('selected')})
+    console.log('Shoot!')
+})
+
+
