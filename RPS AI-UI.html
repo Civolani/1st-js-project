@@ -83,6 +83,31 @@
         padding: 1.5%;
         padding-left: 25px;
         padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #outcomedisplay {
+        font-size: 25px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    .victorycolor {
+        color: green
+    }
+
+    .defeatcolor {
+        color: red
+    }
+
+    .tiecolor {
+        color: gray
+    }
+    
+    .weaponunselected {
+        font-weight: 400 !important;
+        font-size: 20px !important;
     }
 </style>
 
@@ -102,9 +127,9 @@
     <div></div>
 
     <div id="userchoices">
-    <button id="rock" class="weapon">Rock</button>
-    <button id="paper" class="weapon">Paper</button>
-    <button id="scissors" class="weapon">Scissors</button>
+    <button id="3" class="weapon">Rock</button>
+    <button id="1" class="weapon">Paper</button>
+    <button id="2" class="weapon">Scissors</button>
     </div>
 
     <br><br>
@@ -120,7 +145,7 @@
 
     <br>
     
-    <div id="outcome"></div>
+    <div id="outcomedisplay"></div>
 
     <script src="RPS.js"></script>
 </body>
