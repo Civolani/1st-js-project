@@ -19,20 +19,22 @@ let options = ['Paper', 'Scissors', 'Rock']
 let index = 0 
 
 setInterval(function() {
+
     if (display.textContent === '' || display.textContent === 'Select Your Weapon!') {
     cpu.textContent = options[index];
     index = (index + 1) % 3
     }
+
 }, 500)
 
 document.addEventListener('click', function (clickedout) {
+
     weaponList.forEach(function(btn) {btn.classList.remove('selected')});
     if (clickedout.target.classList.contains('weapon')) {
       clickedout.target.classList.add('selected')
       selectedweapon = clickedout.target.id;
       console.log(clickedout.target.textContent)
     }
-
 })
 
 
@@ -45,6 +47,7 @@ document.getElementById('shoot').addEventListener('click', function (deselect) {
     cpu.textContent = options[cpuselectedweapon - 1]
     console.log('CPU Weapon:', cpuselectedweapon)
     outcome = selectedweapon - cpuselectedweapon
+    
     if (outcome === 1 || outcome === -2) {
         console.log('Victory')
         display.classList.add('victorycolor')
@@ -67,6 +70,7 @@ document.getElementById('shoot').addEventListener('click', function (deselect) {
         display.classList.remove('victorycolor', 'defeatcolor', 'tiecolor', 'weaponunselected')
         display.textContent = '';
     }, 2500)
+
 })
 
 
