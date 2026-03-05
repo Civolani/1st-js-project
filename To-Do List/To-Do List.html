@@ -6,16 +6,48 @@
 
 <style>
 
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to right top, #00c8ff, #00cdfb, #00d1f7, #00d5f1, #12d9eb);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #main-window {
+        background-color: white;
+        padding: 25px;
+        border-radius: 20px;
+
+    }
+
+    #add {
+       border-radius: 50%; 
+       border: none;
+       background-color: rgb(255, 86, 86);
+       font-style: bold;
+       color: white;
+    }
 
 </style>
 
 <body>
+<div id="main-window">
 
+    <div>
+    <button id="add">+</button>
     <input type="text" id="new_item" placeholder="Add a task...">
-    
+    </div>   
+
+    <div style="align-self: flex-start">
     <ul id="list">
         <li></li>
         
     </ul>
+    </div>
 
+</div>
 </body>
