@@ -28,12 +28,30 @@
         align-items: center;
     }
 
-    #add {
+    #add-button {
        border-radius: 50%; 
        border: none;
        background-color: rgb(255, 86, 86);
        font-style: bold;
        color: white;
+       font-size: 40px;
+       height: 60px;
+       width: 60px;
+    }
+
+    #new-item {
+        border-radius: 5px;
+        background-color: rgb(218, 218, 218);
+        border: 0px;
+        padding: 7px;
+        padding-right: 0px;
+        font-size: 30px;
+
+    }
+
+    #list-header {
+        justify-content: center;
+        align-items: center;
     }
 
 </style>
@@ -41,9 +59,9 @@
 <body>
 <div id="main-window">
 
-    <div>
-    <button id="add">+</button>
-    <input type="text" id="new_item" placeholder="Add a task...">
+    <div id="list-header">
+    <button id="add-button">+</button>
+    <input type="text" id="new-item" placeholder="Add a task...">
     </div>   
 
     <div style="align-self: flex-start">
@@ -54,4 +72,13 @@
     </div>
 
 </div>
+
+
+<button onclick="location.reload()" style="
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+">↻</button>
+
 </body>
