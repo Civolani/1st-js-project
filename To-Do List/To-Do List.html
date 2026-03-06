@@ -35,23 +35,51 @@
        font-style: bold;
        color: white;
        font-size: 40px;
-       height: 60px;
-       width: 60px;
+       height: 55px;
+       width: 55px;
+       cursor: pointer;
     }
 
     #new-item {
-        border-radius: 5px;
+        border-radius: 15px;
         background-color: rgb(218, 218, 218);
         border: 0px;
         padding: 7px;
         padding-right: 0px;
-        font-size: 30px;
-
+        font-size: 22px;
+        padding-left: 15px;
+        margin-left: 10px;
+        width: 370px;
+        height: 35px;
     }
 
     #list-header {
+        display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 2px solid gray;
+        cursor: pointer
+    }
+
+    input[type='checkbox']:checked {
+        background-color: rgb(75, 75, 75);
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-left: -27.5px;
     }
 
 </style>
@@ -60,15 +88,19 @@
 <div id="main-window">
 
     <div id="list-header">
-    <button id="add-button">+</button>
-    <input type="text" id="new-item" placeholder="Add a task...">
+
+     <button id="add-button">+</button>
+     <input type="text" id="new-item" placeholder="Add a task...">
+
     </div>   
 
+
     <div style="align-self: flex-start">
-    <ul id="list">
-        <li></li>
-        
-    </ul>
+
+     <ul id="list">
+     <li><input type="checkbox" style=margin-right:10px>Walk the dog</li>  
+     </ul>
+
     </div>
 
 </div>
@@ -81,4 +113,5 @@
     transform: translateY(-50%);
 ">↻</button>
 
+<script src='To-Do List.js'></script>
 </body>
