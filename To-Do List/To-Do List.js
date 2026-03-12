@@ -24,3 +24,4 @@ list.addEventListener('change', function(check) {
     if (check.target.type === 'checkbox') {
         {check.target.parentElement.classList.toggle('checked')}}
 })
+
