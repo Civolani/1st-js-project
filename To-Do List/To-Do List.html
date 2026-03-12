@@ -18,6 +18,7 @@
         background-size: cover;
         height: 100vh;
         margin: 0;
+        font-family: system-ui;
     }
 
     #main-window {
@@ -84,9 +85,15 @@
 
     .checked {
         text-decoration: line-through;
-        color: gray;
+        color: rgb(80, 80, 80);
     }
 
+    #removebutton {
+        background-color: transparent;
+        border: 0px;
+        font-style: bold;
+        color: rgb(192, 0, 0);
+    }
 
 </style>
 
@@ -104,7 +111,7 @@
     <div style="align-self: flex-start">
 
      <ul id="list">
-     <li><input type="checkbox" id="listcheckbox" style=margin-right:10px>Walk the dog</li>  
+     <li><input type="checkbox" id="listcheckbox" style=margin-right:10px>Walk the dog<button id="removebutton">━</button></li>  
      </ul>
 
     </div>

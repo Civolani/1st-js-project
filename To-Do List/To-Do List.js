@@ -20,8 +20,7 @@ addbutton.addEventListener('click', function() {
     }
 })
 
-listcheckbox.forEach(function(check) {
-    check.addEventListener('click', function(clickedbox) {
-        if (clickedbox.target.) 
-    })
+list.addEventListener('change', function(check) {
+    if (check.target.type === 'checkbox') {
+        {check.target.parentElement.classList.toggle('checked')}}
 })
